@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <!--  Meowwww -->
+      <title>Space Chatons !</title>
+
+      <!--- Furr css -->
+      <link rel="stylesheet" href="/css/spacechatons.css"/>
+      <link rel="stylesheet" href="/css/typo.css"/>
+
+      <!-- true libs for true apps. -->
+      <script src="/libs/jquery.js"></script>
+      <script src="/libs/underscore.js"></script>
+      <script src="/libs/backbone.js"></script>
+
+      <!-- requestanimationframe -->
+      <script src="/libs/requestanimationframe.js"></script>
+
+
+      <!-- speak client -->
+      <script src="/libs/speakjs/speakClient.js"></script>
+
+
+      <script src="/libs/jquery.simplemodal.js"></script>
+      <link rel="stylesheet" href="/css/login.css"/>
+
+
+      <!-- other stuff-->
+      <script src="/libs/md5.js"></script>
+
+      <!-- socket.io -->
+      <script src="/socket.io/socket.io.js"></script>
+      <script type="text/javascript">
+          window.socket = io.connect();
+      </script>
+
+      <!-- application -->
+      <script type="text/javascript">
+          window.Kitty = {};
+      </script>
+      <script src="/js/spark.js"></script>
+      <script src="/js/config.js"></script>
+      <script src="/js/game.js"></script>
+      <script src="/js/app.js"></script>
+
+  </head>
+
+  <body>
+    <%- body %>
+
+
+    <div style="display: none;">
+        <%- partial('../partials/loginLayer') %>
+    </div>
+
+    <div id="audio" style="display: none;"></div>
+
+  </body>
+
+</html>

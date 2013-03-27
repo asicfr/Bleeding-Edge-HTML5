@@ -1,0 +1,45 @@
+<% layout('layouts/main') -%>
+
+<script src="/libs/md5.js"></script>
+<script src="/libs/requestanimationframe.js"></script>
+<script src="/libs/imageprocessing.js"></script>
+<script src="/libs/dat.gui/dat.gui.js"></script>
+
+<script src="/libs/augmentedgesture.js"></script>
+<script src="/libs/gesturerecognition.js"></script>
+<script src="/libs/three.min.js"></script>
+<script src="/libs/tween.min.js"></script>
+<script src="/libs/TrackballControls.js"></script>
+<script src="/libs/CSS3DRenderer.js"></script>
+<script src="/libs/identicon.js"></script>
+
+
+<script src="/js/sphere/periodic_table.js"></script>
+<script src="/js/sphere/sphere.js"></script>
+<link rel="stylesheet" href="/css/sphere.css"/>
+<link rel="stylesheet" href="/css/stars.css" type="text/css">
+
+<script>
+var sphere;
+$(function() {
+    sphere = new ScoreSphere();
+});
+</script>
+
+<div id="background"></div>
+<div id="midground"></div>
+<div id="foreground"></div>
+
+<div id="container"></div>
+
+<div id="menu">
+    <button id="table">TABLE</button>
+    <button id="sphere">SPHERE</button>
+</div>
+<style>
+</style>
+<div id="disp"><canvas id="comp"></canvas></div>
+<video id="video" autoplay width="300" style="display:none"></video>
+<canvas id="canvas" style="width:300px;display:none;"></canvas>
+<script src="js/sphere/gesture.js"></script>
+

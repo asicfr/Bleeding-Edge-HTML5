@@ -1,0 +1,44 @@
+/* Login Overlay */
+#login-overlay {
+    background-color: #000;
+}
+
+/* Login Container */
+#login-container {
+    overflow: hidden;
+
+    background-color: #000;
+    color: #979797;
+    font: 16px/24px "Lucida Grande", Arial, sans-serif;
+
+    padding-bottom: 4px;
+
+    width: 600px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-radius: 0 0 6px 6px;
+    -moz-box-shadow: 0 0 64px #000;
+    -webkit-box-shadow: 0 0 64px #000;
+    box-shadow: 0 0 64px #000;
+}
+
+#login-container a {
+    color: #ddd;
+}
+
+#login-container .login-title {
+    color: #000;
+    background-color: #ddd;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    padding: 6px 8px;
+    text-shadow: 0 1px 0 #f4f4f4;
+}
+
+#login-container .login-content {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px;
+}

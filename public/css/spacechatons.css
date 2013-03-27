@@ -1,0 +1,31 @@
+.logo, .search{
+	text-align: center;
+}
+
+body {
+	margin-bottom: 200px;
+	position: relative;
+}
+
+.logo {
+  font-family: "UbuntuBoldItalic" !important;
+  font-size: 80px !important;
+  text-transform: none !important;
+  color: white !important;
+}
+
+.team {
+  background-color: #F2F2F2;
+  border-right: 1px solid #E6E6E6;
+  width: 130px;
+  vertical-align: top;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.team span {
+    line-height: 31px;
+    vertical-align: top;
+    padding-left: 10px;
+  }

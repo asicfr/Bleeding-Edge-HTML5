@@ -1,0 +1,113 @@
+
+
+/* speech input */
+
+.container {
+    width: 720px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 300;
+    overflow: hidden;
+    padding: 30px 50px;
+}
+
+.speech-input {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+}
+
+/* board */
+
+#board {
+    padding: 10px 10px;
+}
+
+.board-message {
+    width: 60%;
+    background-color: #F1F1F1;
+    border: solid #C3C3C3 1px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-family: "UbuntuRegular";
+}
+
+.hal-kittens {
+    height: 150px !important;
+    width: 150px!important;
+    border-radius : 100px;
+    border: 15px solid grey;
+    margin: 13px;
+}
+
+.board-message.user-message {
+
+}
+
+.board-message.hal-message {
+    margin-left: 35%
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form input {
+    border-radius: 5px;
+    border: 0;
+    padding-left: 20px;
+}
+
+/* hal related stuff */
+.circle {
+    border-radius: 50%;
+    margin: auto;
+}
+#hal {
+    width: 250px;
+    height: 250px;
+    background: -webkit-linear-gradient(left, transparent, #fff 40%, #fff 45%, #fff 55%, #fff 60%, transparent),
+    -webkit-linear-gradient(-45deg, transparent, transparent 35%, white 50%, transparent 65%, transparent),
+    -webkit-linear-gradient(45deg, transparent, transparent 35%, white 50%, transparent 65%, transparent),
+    #3c3734;
+    background-size: 75% 50%, 50% 100%, 50% 100%, 100% 100%;
+    background-position: 50% top, right -50px, left -50px, 50% 50%;
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    box-shadow: 0 5px 20px black;
+}
+#hal .inner {
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: -webkit-box;
+}
+#hal .inner {
+    width: 95%;
+    height: 95%;
+}
+#hal > .inner {
+    background: -webkit-linear-gradient(left, transparent,  transparent 32%, white 45%, white 50%, white 55%, transparent 68%, transparent),
+    -webkit-linear-gradient(-45deg, transparent, transparent 40%, white 50%, transparent 60%, transparent),
+    -webkit-linear-gradient(45deg, transparent, transparent 40%, white 50%, transparent 60%, transparent),
+    -webkit-linear-gradient(top, #b5a5a8, #92807e);
+    background-size: 100% 50%, 50% 100%, 50% 100%, 100% 100%;
+    background-position: 50% bottom, left 50px, right 50px, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+}
+#hal .inner .inner {
+    width: 90%;
+    height: 90%;
+    background: url(/images/glare.png), url(/images/glare2.png),
+    -webkit-radial-gradient(50% 50%, circle, #fffa64, #fd0d00 5%, #f40c00 20%, #ef0b00 20%/*, #440003 45%*/, black 63%);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 76% 41%, 55% 100%, 100%, 100%;
+    background-position: 50% 12%, 27% 8px, center center;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+

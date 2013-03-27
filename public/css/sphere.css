@@ -1,0 +1,120 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+a {
+    color: #ffffff;
+}
+
+#info {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    padding: 5px;
+    font-family: Monospace;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+
+#comp{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  opacity:0.1;
+}
+
+#container{
+    z-index: 400;
+    position: relative;
+}
+
+#menu {
+    z-index: 400;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.element {
+    width: 140px;
+    height: 180px;
+    background-color: rgba(127,127,127,0.7);
+    box-shadow: 0px 0px 20px rgba(0,255,255,0.5);
+    border: 1px solid rgba(127,255,255,0.25);
+    cursor: default;
+}
+
+.element:hover {
+    box-shadow: 0px 0px 20px rgba(0,255,255,0.75);
+    border: 1px solid rgba(127,255,255,0.75);
+}
+
+.element .number {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    font-size: 16px;
+    color: rgba(127,255,255,0.75);
+}
+
+.element .symbol {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    color: rgba(255,255,255,0.75);
+    font-weight: bold;
+
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
+    -moz-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
+    -o-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
+    -ms-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
+    filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
+}
+
+.element .symbol img {
+    height: 100px;
+}
+
+.element .details {
+    position: absolute;
+    top: 135px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(127,255,255,0.75);
+}
+
+button {
+    color: rgba(127,255,255,0.75);
+    background: transparent;
+    outline: 1px solid rgba(127,255,255,0.75);
+    border: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(0,255,255,0.5);
+}
+button:active {
+    color: #000000;
+    background-color: rgba(0,255,255,0.75);
+}
+.team, .command{margin-top: 240px;
+}

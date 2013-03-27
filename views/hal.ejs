@@ -1,0 +1,40 @@
+<% layout('layouts/main') -%>
+
+<!-- http://www.htmlfivewow.com/slide62 -->
+<link rel="stylesheet" href="/css/hal.css" type="text/css">
+<link rel="stylesheet" href="/css/stars.css" type="text/css">
+<script src="/js/hal/base64-arraybuffer.js"></script>
+<script src="/js/hal/hal.js"></script>
+<script src="/js/hal/soundplayer.js"></script>
+<script src="/js/hal/speakBufferGenerator.js"></script>
+<div id="background"></div>
+<div id="midground"></div>
+<div id="foreground"></div>
+<div class="content">
+    <div id="container" class="container">
+        <form id="speechForm" class="form">
+
+
+            <!-- Input Type Speech -->
+
+            <input class="speech-input" type="speech" x-webkit-speech="true">
+        
+
+        </form>
+
+
+        <!-- CSS and canvas -->
+
+        <div id="hal" class="circle">
+            <div class="inner circle">
+                <div class="inner circle">
+                    <canvas id="fft" height="250"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="board">
+        </div>
+    </div>
+</div>

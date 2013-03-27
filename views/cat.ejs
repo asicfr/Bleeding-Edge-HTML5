@@ -1,0 +1,150 @@
+<% layout('layouts/main') -%>
+
+<!-- killingz featurez appz -->
+<script src="/libs/kittydar/kittydar-0.1.1.js"></script>
+<link rel="stylesheet" href="/libs/kittydar/kittydar.css"/>
+<link rel="stylesheet" href="/css/stars.css" type="text/css">
+<link rel="stylesheet" href="/css/cats.css" type="text/css">
+<script src="/libs/modernizr.js"></script>
+<script src="/js/cat/catdetector.js"></script>
+<script src="/js/cat/groover.js"></script>
+
+
+<div id="background"></div>
+<div id="midground"></div>
+<div id="foreground"></div>
+
+<div class="content">
+
+    <script>
+        $(function() {
+            var container = $("#example-chooser");
+            var images = $("img", container);
+            container.hide();
+            images.hide();
+
+            var random = function(min, max) {
+                return Math.floor(Math.random() * (max-min)) + min;
+            };
+
+            $("#searchForm").submit(function() {
+                container.show();
+                images.hide();
+                var imageCount = random(5, 10);
+                for(var i=0; i<imageCount; i++) {
+                    var randomNumber = random(0, images.length - 1);
+                    images.eq(randomNumber).fadeIn(750);
+                }
+                return false;
+            });
+        });
+    </script>
+
+    <div class="logo">
+        <h1 id="title" class="groover logo" data-groover-panes="20">&nbsp;&nbsp;<span>Space Chaton&nbsp;&nbsp;</span></h1>
+    </div>
+    <div class="search">
+        <form id="searchForm" action="#">
+            <i class="search-icon"></i>
+
+
+
+
+
+
+            <!-- Input Autocomplete -->
+
+            <input type="text" id="txt" name="txt" list="cats" />
+            
+            <datalist id="cats">
+                <option value=" aristochats" />
+                <option value=" blacksad" />
+                <option value=" chat botte" />
+                <option value=" catwoman" />
+                <option value=" felix" />
+                <option value=" garfield" />
+                <option value=" hello kitty" />
+                <option value=" isidore" />
+                <option value=" nyan cat" />
+                <option value=" pizza cats" />
+                <option value=" telechat" />
+            </datalist>
+
+
+
+
+
+
+        </form>
+    </div>
+    <div id="example-chooser">
+        <div id="thumbs">
+            <img class="example-thumb" src="/images/cats/cat1.jpg"></img>
+            <img class="example-thumb" src="/images/cats/cat2.jpg"></img>
+            <img class="example-thumb" src="/images/cats/cat3.jpg"></img>
+            <img class="example-thumb" src="/images/cats/cat4.jpg"></img>
+            <img class="example-thumb" src="/images/cats/peck_kittens_jun_06.jpg"></img>
+            <img class="example-thumb" src="/images/cats/resized_580x732_spacecat.jpg"></img>
+            <img class="example-thumb" src="/images/cats/resized_580x774_spacecatmushrooms.jpg"></img>
+            <img class="example-thumb" src="/images/cats/resized_580x785_Space_Cat_Venus.jpg"></img>
+            <img class="example-thumb" src="/images/cats/resized_580x862_space_cat_and_the_kittens.jpg"></img>
+            <img class="example-thumb" src="/images/cats/space_cats.jpg"></img>
+            <img class="example-thumb" src="/images/cats/SpaceCat(1).jpg"></img>
+            <img class="example-thumb" src="/images/cats/spacecat.jpg"></img>
+            <img class="example-thumb" src="/images/cats/spacecats.jpg"></img>
+            <img class="example-thumb" src="/images/cats/SPOT.JPG"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lqpxd6iUrM1r29zg1o1_500.jpg"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lr80mhz0iA1r29zg1o1_500.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lsx8f6VQx61r4xjo2o1_250.jpg"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lt0kadzp1X1r4xjo2o1_250.jpg"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_ltlbxrW5XB1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_ltnrtxthxq1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lufqcdlubl1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lugliyU36E1r4xjo2o1_250.jpg"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lv1u3vbF1T1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lv15i76Sje1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lvozeeZf3I1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lvrg6jdOYN1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lw7fawphA01r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lw40sypMch1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lwl6h1yYMU1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lxc88oMOc21r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lxclljmv6Y1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lxi9wofGOk1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_lxwstra7Da1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_ly0bt708Bn1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_m8jscf6OEa1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_m9kz0lpkQ41r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_m52uzolN6s1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_m867ehWgzK1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_mbjm85c7DI1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_mcmk7uVpAA1qgqdhx.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_mcorglszsP1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_md5kbbW4bB1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_md047tX1JQ1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_mdancgV98b1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_meft68cufK1r4xjo2o1_250.gif"></img>
+            <img class="example-thumb" src="/images/cats/tumblr_meoeqxtwiz1r4xjo2o1_250.gif"></img>
+        </div>
+    </div>
+
+    <div id="progress"></div>
+
+    <div id="container">
+        <div id="viewer-container">
+            <div id="viewer">
+                <div id="droparea-text">
+                    Drag an image here to find cats.
+                </div>
+                <canvas id="preview">
+                </canvas>
+                <canvas id="annotations">
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="drawing" hidden=true>1</div>
+
+</div>

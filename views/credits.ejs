@@ -1,0 +1,128 @@
+<% layout('layouts/main') -%>
+
+<link rel="stylesheet" href="/css/credits.css" type="text/css"/>
+<link rel="stylesheet" href="/css/theremin.css" type="text/css"/>
+<link rel="stylesheet" href="/css/stars.css" type="text/css">
+<script src="/js/credits/particles.js"></script>
+<script src="/js/credits/credits.js"></script>
+
+<script src="//use.typekit.net/enw0xku.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<div id="background"></div>
+<div id="midground"></div>
+<div id="foreground"></div>
+
+<div class="content">
+
+    <!-- html5 canvas -->
+    <div class="container">
+        <span class="fireworks">
+    
+            <form>
+            <label for="gravity">Gravity</label>
+            <select id="gravity">
+                <option value="0" selected>None</option>
+                <option value="1">Light</option>
+                <option value="2">Medium</option>
+                <option value="3">Heavy</option>
+            </select>
+
+            <label for="image_src">Type</label>
+            <select id="image_src">
+                <option value="star">Star</option>
+                <option value="electric">Electric</option>
+                <option value="spark" selected>Spark</option>
+            </select>
+            </form>
+
+            <canvas id="fireworks" width="540" height="300"></canvas>
+
+            <script src="/libs/fireworks.js"></script>
+        </span>
+        <div class="svg-badge"></div>
+        <div id="nyan"></div>
+        <div id="photobooth" class="photobooth">
+
+            <video id="video" autoplay width="300"></video>
+            <canvas id="canvas" width="300"></canvas>
+
+            <script>
+            $(function() {
+                new PhotoBooth();
+            });
+            </script>
+        </div>
+    </div>
+
+    <div id="container" class="electro-container">
+        <h1 class="tk-orgovan-rounded-web">Electro-Theremin</h1>
+        <div id="credits">
+            <p>
+                <span><audio src="/sound/startrek.mp3" controls></audio></span>
+                <!-- Made with <a href="http://theresassoundworld.com">Theresa's Sound World</a> -->
+                <span class="thankyou">Thank You!</span>
+            </p>
+        </div>
+    </div>
+    <script src="/libs/theresas-sound-world.js"></script>
+    <script src="/libs/raphael-min.js"></script>
+    <script src="/libs/electro-theramin.js"></script>
+<!-- 
+ -->
+
+    <!-- -credits -->
+    <div id="titles">
+        <div id="titlecontent">
+            <p>Thanks to, in no particular order</p>
+            <!-- Cats -->
+            <p>CSS3 keyframes and animation-name. Demo inspired by CHRIS COYIER <a href="http://css-tricks.com/parallax-background-css3/">CSS3 Parallax Background</a></p>
+            <p>datalist element for autocomplete</p>
+            <p>notifications</p>
+            <p>requestAnimationFrame and style: textShadow. Demo inspired by <a href="http://metafizzy.co/">Metafizzy</a></p>
+            <p>worker: postMessage and onmessage. Demo inspired by <a href="http://harthur.github.com/kittydar//">kittydar</a></p>
+            <p>onDrop, dataTransfer.files and fileReader readAsDataURL( file )</p>
+            
+            <!-- Hal -->
+            <p>input type=speech</p>
+            <p>Audio synthesis. Demo heavily inspired by Paul Kinlan and his <a href="https://github.com/PaulKinlan/presentations">HAL</a> and Eric Bidelman</p>
+
+            <!-- Sphere -->
+            <p>CSS3D. Demo inspired by mrdoob periodic table <a href="http://www.mrdoob.com/lab/javascript/threejs/css3d/periodictable/">Sphere</a></p>
+            <p>WebRTC and getUserMedia. Demo inspired by <a href="hhttp://www.chromeexperiments.com/detail/gesture-based-revealjs/">this Google Chrome experiment</a></p>
+            <p>localStorage, gravatar, JSONP, WebSockets, node.js, express.js</p>
+
+            <!-- Credits -->
+            <p>CSS Transforms and <a href="http://www.sitepoint.com/css3-starwars-scrolling-text/">Star Wars Scrolling text</a>
+            <p>SVG and <a href="https://github.com/Automattic/canvas-fireworks">Canvas Fireworks</a></p>
+
+            <!-- copy pasta to have more time -->
+
+
+            <!-- Cats -->
+            <p>CSS3 keyframes and animation-name. Demo inspired by CHRIS COYIER <a href="http://css-tricks.com/parallax-background-css3/">CSS3 Parallax Background</a></p>
+            <p>datalist element for autocomplete</p>
+            <p>notifications</p>
+            <p>requestAnimationFrame and style: textShadow. Demo inspired by <a href="http://metafizzy.co/">Metafizzy</a></p>
+            <p>worker: postMessage and onmessage. Demo inspired by <a href="http://harthur.github.com/kittydar//">kittydar</a></p>
+            <p>onDrop, dataTransfer.files and fileReader readAsDataURL( file )</p>
+            
+            <!-- Hal -->
+            <p>input type=speech</p>
+            <p>Audio synthesis. Demo heavily inspired by Paul Kinlan and his <a href="https://github.com/PaulKinlan/presentations">HAL</a> and Eric Bidelman</p>
+
+            <!-- Sphere -->
+            <p>CSS3D. Demo inspired by mrdoob periodic table <a href="http://www.mrdoob.com/lab/javascript/threejs/css3d/periodictable/">Sphere</a></p>
+            <p>WebRTC and getUserMedia. Demo inspired by <a href="hhttp://www.chromeexperiments.com/detail/gesture-based-revealjs/">this Google Chrome experiment</a></p>
+            <p>localStorage, gravatar, JSONP, WebSockets, node.js, express.js</p>
+
+            <!-- Credits -->
+            <p>CSS Transforms and <a href="http://www.sitepoint.com/css3-starwars-scrolling-text/">Star Wars Scrolling text</a>
+            <p>SVG and <a href="https://github.com/Automattic/canvas-fireworks">Canvas Fireworks</a></p>
+
+            <!--<p>CSS transform: perspective</p>-->
+        </div>
+    </div>
+
+
+</div>

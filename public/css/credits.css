@@ -1,0 +1,199 @@
+
+#titles {
+    
+    -webkit-transform-origin: 50% 100%;
+    
+    transform-origin: 50% 100%;
+
+    -webkit-transform: perspective(300) rotateX(25deg);
+
+    transform: perspective(300px) rotateX(25deg);
+
+}
+
+.svg-badge {
+    display: block !important;
+}
+
+#titlecontent {
+    
+    top: 100%;
+    
+    -webkit-animation: scroll 100s linear 0s infinite;
+
+    animation: scroll 100s linear 4s infinite;
+}
+
+
+.fireworks {
+    display: block !important;
+}
+/*
+.electro-container, svg {
+    display: none;
+}
+*/
+
+
+
+
+@keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+
+
+
+
+
+
+@-webkit-keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+
+
+.fireworks, .svg-badge {
+    display: none;
+}
+.fireworks form {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#titles {
+    position: absolute;
+    width: 18em;
+    height: 50em;
+    bottom: 0;
+    left: 50%;
+    margin-left: -9em;
+    font-size: 350%;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #f2ed63;
+    text-align: justify;
+    overflow: hidden;
+
+}
+
+#titles a {
+    text-decoration: none;
+    color: #f2ed63 !important;
+}
+
+#titles:after {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 60%;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+    background-image: linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+#titles p {
+    margin: 0.8em 0;
+}
+
+
+#titlecontent {
+    position: absolute;
+}
+
+canvas {
+    display: block;
+}
+
+.content {
+    z-index: 400;
+    position: relative;
+    height: 100%;
+}
+
+.svg-badge {
+    margin: auto;
+    top: 20px;
+    background: url('/svg/HTML5_Badge.svg') no-repeat;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    position: absolute;
+    left: 180px;
+    z-index: 500;
+}
+
+cv {
+    top: 20px;
+    width: 500px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width:  500px;
+    text-align: center;
+    margin: auto;
+}
+svg {
+    top: 250px !important;
+    z-index: 500;
+}
+
+#credits {
+    z-index: 500;
+}
+
+.photobooth {
+    display:none;
+    position: absolute;
+    top: 10px;
+    color: white;
+    height: 190px;
+    left: 100px;
+    width: 330px;
+    z-index: 500;
+}
+
+/* light mode 
+.svg-badge,  #titles {
+    display:none !important;
+}
+*/
+#fireworks {
+    /*visibility: none;*/
+    opacity: 0;
+}
+#nyan {
+    background: url(../images/nyan.gif) no-repeat;
+    background-size: 75%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    z-index: 500;
+    display:none;
+}
+
+#canvas {
+    opacity: 0;
+}
